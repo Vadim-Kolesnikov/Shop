@@ -1,0 +1,41 @@
+.order{
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 2px solid var(--focus-color);
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+.orderTitle{
+    margin-bottom: 10px;
+}
+.order:hover{
+    transform: scale(1.01);
+}
+.order:active{
+    transform: scale(0.98);
+}
+.orderContent{}
+
+.orderText{
+
+
+}
+
+.orderProducts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* max-height: 0px;
+    overflow: hidden; */
+    transition: all 300ms cubic-bezier();
+}
+
+.orderTextTitle{
+    display: inline-block;
+
+    margin-right: 5px;
+
+    margin-bottom: 10px;
+}
+

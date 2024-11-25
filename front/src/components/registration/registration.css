@@ -1,0 +1,44 @@
+.registration{
+}   
+.registrationWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+} 
+.registrationForm{
+    border: 2px solid var(--focus-color);
+    padding: 60px;
+    border-radius: 10px;
+}
+.registrationInput{
+    font-family: 'gotic';
+    display: block;
+    width: 400px;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.registrationButtonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registrationButton{
+    margin-top: 20px;
+    width: 400px;
+    height: 60px;
+}
+.registrationTitle{
+    margin-bottom: 5px;
+}
+
+.registrationMainTitleWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.registrationMainTitle{
+}
+

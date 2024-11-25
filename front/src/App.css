@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "gotic";
+  src: url("fonts/CeltesSP.otf");
+}
+
+.App {
+  font-family: 'gotic';
+  font-weight: lighter;
+}
+
+.pageTitle {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.btnStyle {
+  font-family: "gotic";
+  border-radius: 10px;
+  border: 2px solid var(--focus-color);
+  background-color: var(--main-color);
+  color: var(--focus-color);
+  font-size: 15px;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.btnStyle:hover{
+  transform: scale(1.05);
+}
+.btnStyle:active{
+  transform: scale(0.9);
+}
+
+
+.inputStyle{
+  font-family: "gotic";
+  border-radius: 10px;
+  border: 2px solid var(--focus-color);
+  background-color: var(--main-color);
+  color: var(--focus-color);
+  font-size: 15px;
+  transition: all 100ms linear;
+}
+
+.inputStyle:active{
+  background-color: var(--main-color);
+}
+
+
+.titleText{
+  font-family: "gotic";
+  color: var(--focus-color);
+  font-size: 1rem
+
+}
+.subTitleText{
+  font-family: "gotic";
+  color: var(--focus-color);
+  /* font-size: 22px; */
+  font-size: 0.88rem;
+
+}
+.regularText{
+  font-family: "gotic";
+  color: var(--focus-color);
+  /* font-size: 15px; */
+  font-size: 0.66rem;
+}
+.aText{
+  transition:all 100ms linear ;
+  cursor: pointer;
+}
+.aText:hover{
+  transform: scale(1.15);
+}
+.aText:active{
+  transform: scale(0.9);
+}
+
+
+.pageStyle{
+    background-color: var(--main-color);
+    padding-left: 150px;
+    padding-right: 150px;
+    @media (max-width: 1350px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    };
+    @media (max-width: 1100px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    };
+    @media (max-width: 1000px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

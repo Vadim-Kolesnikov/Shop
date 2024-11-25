@@ -1,0 +1,8 @@
+.orders{
+    width: 100%;
+}
+
+.activeOrder{
+    max-height: 200px;
+    overflow: hidden;
+}

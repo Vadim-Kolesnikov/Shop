@@ -1,0 +1,13 @@
+.startPageHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    height: 70px;
+    margin-bottom: 40px;
+    padding-left: 160px;
+    padding-right: 160px;
+    border-bottom: 2px solid var(--focus-color);
+}
+.startPage{
+    height: 100vh;
+}

@@ -1,0 +1,65 @@
+.main{
+    position: relative;
+
+}
+header{
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 3;
+}
+.triangle{
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    right: -25px;
+    transform: rotate(90deg);
+}
+ 
+
+.triangleContainer{
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.notification{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    top: 100px;
+    right: 150px;
+    z-index: 10;
+    padding: 10px;
+    @media (max-width: 1350px) {
+        right: 100px;
+      };
+      @media (max-width: 1100px) {
+        right: 60px;
+      };
+      @media (max-width: 1000px) {
+        right: 40px;
+      };
+
+    /* animation-duration: 3s;
+    animation-name: slidein; */
+    display: none;
+    }
+  
+  @keyframes slidein {
+    from {
+        right: -150px;
+    }
+  
+    to {
+        right: 150px;
+    }
+
+  }
+.notificationTitle{
+    
+}
+.notificationText{}

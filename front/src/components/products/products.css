@@ -1,0 +1,77 @@
+.productsFourColContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    @media (max-width: 1350px) {
+        grid-template-columns: repeat(3, 1fr); 
+    };
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+.pageTitleSort{
+    cursor: pointer;
+}
+.pageTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.pageTitleSortMenu{
+    position: absolute;
+    top:20px;
+    right: 0;;
+    z-index: 2;
+    background-color: var(--main-color);
+    padding-top: 10px;
+
+    border-radius: 10px 0px 10px 10px;
+
+    max-width: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    animation: deactivePageTitleSortMenuAnim 0.2s;
+}
+.pageTitleSortMenuEl{
+    margin-bottom: 10px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+.pageTitleSortMenuEl:hover{
+    background-color: var(--focus-color);
+    color: var(--main-color)
+}
+.activePageTitleSortMenuEl{
+    background-color: var(--focus-color);
+    color: var(--main-color)
+}
+@keyframes  deactivePageTitleSortMenuAnim{
+    0% {
+
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+    100% {
+        max-width: 0px;
+        max-height: 0px;
+    }
+}
+@keyframes  activePageTitleSortMenuAnim{
+    0% {
+     
+        max-height: 0px;
+    }
+    100% {
+     
+        max-height: 1000px;
+    }
+}
+.activePageTitleSortMenu{
+    animation: activePageTitleSortMenuAnim 0.2s;
+    max-width: 1000px;
+    max-height: 1000px;
+    border: 1.5px solid var(--focus-color);
+}

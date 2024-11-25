@@ -1,0 +1,50 @@
+.qty{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 150px;
+}
+.deleteProductBtn{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qtyBtn{
+    width: 100%;
+    height: 40px;
+}
+.qtyInput{
+    width: 45%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    text-align: center;
+}
+
+.cartProductInterface{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    margin-top: -25px;
+    background-color: var(--main-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid var(--focus-color);
+}
+
+.cartProduct{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cartBin{
+    width: 70%;
+    height: 60%;
+    filter: var(--main-img)
+}

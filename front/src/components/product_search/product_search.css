@@ -1,0 +1,223 @@
+
+
+
+
+.products{
+  
+}
+.productsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    @media (max-width: 1350px) {
+        grid-template-columns: repeat(2, 1fr); 
+    };
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+.productsPageContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+.filterTitle{
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--focus-color);
+    padding: 4px;
+    width: 60%;
+}
+.filterTitle:hover{
+    transform: scale(1.03);
+}
+.filterTitle:active{
+    transform: scale(0.97);
+}
+@keyframes deactiveFilterAnim  {
+    0% {max-height: 1000px}
+    100% {max-height: 40px}
+}
+.filter{
+    margin-bottom: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    animation: deactiveFilterAnim 0.5s;
+}
+@keyframes activeFilterAnim {
+    0% {max-height: 40px}
+    100% {max-height: 1000px}
+}
+.activeFilter{
+    margin-bottom: 20px;
+    animation: activeFilterAnim  0.5s;
+    max-height: 1000px;
+    overflow: hidden;
+}
+.choiceElement{
+
+    margin-bottom: 5px;
+}
+.radioElement{
+}
+.rangePrice{
+    display: inline-block;
+    width: 60px;
+    border-radius: 5px;
+    font-family: 'gotic';
+}
+.rangeInput{
+    width: 100%;
+    min-width: 100px
+}
+.priceSlider{
+
+}
+.addFiltersBtnGroup{
+    border-top: 2px solid var(--focus-color);
+}
+.addFiltersBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.addFiltersBtn{
+    width: 70%;
+    height: 40px;
+    font-family: 'gotic';
+}
+.rangePriceWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.productsSortFilter{
+    border: 2px solid var(--focus-color);
+    border-radius: 5px;
+    padding: 20px;
+    
+    width: 80%;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+    @media (max-width: 800px) {
+        width: 70%; 
+    }
+    @media (max-width: 600px) {
+        width: 60%; 
+    }
+}
+
+.rangeInputContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginationMenuWrapper{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.paginationMenu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.nonActivePaginationBtn{
+    /* border-color: var(--low-text-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--low-text-color);
+}
+.paginationBtn{
+    border: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: all 100ms;
+}
+.paginationBtn:hover{
+    transform: scale(1.2);
+}
+.paginationBtn:active{
+    transform: scale(0.9);
+
+}
+.nonActivePaginationBtn:hover{
+    transform: none;
+}
+.nonActivePaginationBtn:active{
+    transform: none;
+
+}
+.currentPageNumber{
+    padding: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.filterTitle{
+    cursor: pointer;
+}
+@keyframes deactiveArrowAnim {
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(00deg);}
+}
+@keyframes activeArrowAnim {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+.arrowImg{
+    width: 15px;
+    height: 15px;
+    filter: var(--main-img);
+    margin-left: 10px;
+    animation: deactiveArrowAnim 0.5s;
+}
+.activeArrowImg{
+    animation: activeArrowAnim 0.2s;
+    transform: rotate(90deg);
+}
+.arrowImgcontainer{
+    display: inline;
+    height: 100%;
+    align-items: center;
+    
+}
+.paginationArrow{
+    width: 25px;
+    height: 25px;
+    filter: var(--main-img)
+}
+.rigthPaginationArrow{
+    transform: rotate(180deg);
+}
+.deactivePaginationArrow{
+    filter: var(--main-deactive-color);
+}
+.paginationBtn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.noProductsMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    height: 50vh;
+    @media (max-width: 1350px) {
+        width: 200%;
+    };
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+.product{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template: 80% 20%/ 1fr;
+    margin: 10px;
+    margin-bottom: 30px;
+    border: 2px solid var(--focus-color);
+    transition: all 100ms linear;
+}
+.productWrapper:hover{
+    transform: scale(1.02);
+}
+.productWrapper:active{
+    transform: scale(0.98);
+}
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.productImg{
+    border-radius: 10px;
+    width: 100%;
+  
+}
+.productInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.productText{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.productTextStart{
+    justify-content: start;
+}
+.productTextEnd{
+    justify-content: end;
+}
+
+.productTextList{
+    display: flex;
+    justify-content: space-between;
+}
+.productTextListEl{
+    margin-left: 5px;
+}
+.productBrands{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px
+}
+.productWrapper{
+    position: relative;
+    transition: 100ms all linear;
+}
+.qtyBox{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    z-index: 1;
+    transition: 250 all linear;
+    color: var(--main-color)
+}
+
+.overflowText{
+    overflow: hidden;
+}
+
+
+
+
+

@@ -1,0 +1,4 @@
+react-promise-tracker
+react-router-dom
+axios
+react-range-slider-input

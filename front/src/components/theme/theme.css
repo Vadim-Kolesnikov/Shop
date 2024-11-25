@@ -1,0 +1,13 @@
+.theme{
+    cursor: pointer;
+    background-color: var(--focus-color);
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--focus-color);
+    border-radius: 10px
+}
+.themeImg{
+    width: 30px;
+    height: 30px;
+    filter: var(--theme-img);
+}

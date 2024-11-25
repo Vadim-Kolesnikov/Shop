@@ -1,0 +1,36 @@
+.changeProfileData{}
+.changeProfileDataFormTitle{
+    margin-bottom: 20px;
+}
+.changeProfileDataForm{
+    margin-bottom: 40px;
+    padding-left: 10%;
+}
+.changeProfileDataInputGroup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.changeProfileDataInputContainer{
+    width: 100%;
+}
+.changeProfileDataInputTitle{
+    margin-bottom: 5px;
+}
+.changeProfileDataInput{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 90%;
+    padding-left: 20px;
+}
+            
+.profileDataButtonContainer{
+    width: 100%;
+}
+
+.profileDataButton{
+    width: 70%;
+    height: 40px;
+}
+            
+        

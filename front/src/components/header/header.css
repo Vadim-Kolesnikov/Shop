@@ -1,0 +1,77 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--focus-color);
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.navElement{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    @media (max-width: 700px) {
+        display: none;
+      };
+}
+.logoImg{
+    height: 70%;
+    filter: var(--main-img)
+}
+.headerDropMenu{
+    position: absolute;
+    top: 20px;
+    max-height: 0px;
+    /* max-width: 0px; */
+    overflow: hidden;
+    transition: all 50ms ;
+    background-color: var(--main-color);
+    width: inherit;
+    padding: none;
+    border: none;
+    /* font-size: 0px; */
+}
+.leftDropMenu{
+    right: 0px;
+    border-radius: 10px 0px 10px 10px;;
+}
+.rightDropMenu{
+    left: 0px;
+    border-radius: 0px 10px 10px 10px;;
+}
+.headerDropMenuContainer{
+    width: inherit;
+    position: relative;
+}
+
+.headerDropMenuElement{
+    margin-bottom: 8px;
+}
+.navElement:hover .headerDropMenu{
+    max-height: 300px;
+    /* max-width: 300px; */
+    display: block;
+    border: 1.5px solid var(--focus-color);
+    padding: 10px;
+    padding-bottom: 2px;
+    /* font-size: 15px; */
+}
+.headerDropMenuTitle{
+    transition: all 100ms ;
+
+
+}
+.navElement:hover .headerDropMenuTitle{
+    transform: scale(1.15);
+}
