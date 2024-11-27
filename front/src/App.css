@@ -26,7 +26,7 @@ a {
   background-color: var(--main-color);
   color: var(--focus-color);
   font-size: 15px;
-  transition: all 100ms linear;
+  transition: transform 100ms linear;
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ a {
   background-color: var(--main-color);
   color: var(--focus-color);
   font-size: 15px;
-  transition: all 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 .inputStyle:active{
@@ -73,7 +73,7 @@ a {
   font-size: 0.66rem;
 }
 .aText{
-  transition:all 100ms linear ;
+  transition: transform 100ms linear ;
   cursor: pointer;
 }
 .aText:hover{

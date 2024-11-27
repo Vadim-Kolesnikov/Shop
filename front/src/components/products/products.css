@@ -30,7 +30,7 @@
     max-width: 0px;
     max-height: 0px;
     overflow: hidden;
-    animation: deactivePageTitleSortMenuAnim 0.2s;
+    animation: deactivePageTitleSortMenuAnim 1.5s;
 }
 .pageTitleSortMenuEl{
     margin-bottom: 10px;
@@ -50,12 +50,9 @@
 }
 @keyframes  deactivePageTitleSortMenuAnim{
     0% {
-
-        max-width: 1000px;
-        max-height: 1000px;
+        max-height: 200px;
     }
     100% {
-        max-width: 0px;
         max-height: 0px;
     }
 }
@@ -70,7 +67,7 @@
     }
 }
 .activePageTitleSortMenu{
-    animation: activePageTitleSortMenuAnim 0.2s;
+    animation: activePageTitleSortMenuAnim 1.5s;
     max-width: 1000px;
     max-height: 1000px;
     border: 1.5px solid var(--focus-color);

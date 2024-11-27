@@ -19,7 +19,15 @@ function addToCart(product) {
         product_id: product.id,
         product_qty: 1,
       })
-      .then(() => {});
+      .then(() => {
+        
+      });
+  
+        let elem = document.getElementsByClassName("addToCartNotification")[0]
+        elem.style.right = '0px'
+        setTimeout(()=>{
+          elem.style.right = '-500px'
+        }, 2500)
   };
 }
 
@@ -48,6 +56,10 @@ function ProductDetail(props) {
         </div>
 
         <div className="productDetailInfo">
+          <div className="addToCartNotification regularText">
+            <div className="addToCartNotificationTitle">Product successfully added to cart!</div>
+            <div className="addToCartNotificationDes"></div>
+          </div>
           <div className="productDetailInfoHead titleText">{product.name}</div>
 
           <div className="productDetailInfoText regularText regularText">
